@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="adminstyle.css">
@@ -36,9 +35,9 @@ a:hover
 </head>
 <body>
 <div class="container"  data-aos="zoom-in" data-aos-duration="1000">
-        <h1>Welcome back Admin!!!</h1>
+        <h1 style="color: #f2f2f2">Welcome Admin!</h1>
     <button type="submit"><a  href="donatedetails.php" style="text-decoration:none">Donators</a></button>
-    <button type="submit"><a  href="admindisplayNGO.php" style="text-decoration:none">Searching for Donates</a></button>
+    <button type="submit"><a  href="admindisplaysfd.php" style="text-decoration:none">Searching for Donates</a></button>
            
     
     </div>  

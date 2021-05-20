@@ -51,12 +51,12 @@ if(isset($_POST['submitid']))
 
     ?>
     <div class="container"  data-aos="zoom-in" data-aos-duration="1000">
-        <h1>Lets Donate</h1>
+        <h1>Let's Donate</h1>
         <form id="donate-form" class="donate-form"
         data-aos-easing="ease-in-out" method="post" action="donate.php" >
             
         <label for="text" >Name</label>
-            <input type="text" id="name" placeholder="Full name" name="Name"
+            <input type="text" id="name" placeholder="Name" name="Name"
             required minlength="2" maxlength="100"/>
         
             <label for="text" >Contact</label>
@@ -70,13 +70,10 @@ if(isset($_POST['submitid']))
             <label for="text" >Address</label>
             <textarea type="text" placeholder=" enter location" name="Address"></textarea>
             
-            <label for="textarea" >Things you want to donate</label>
-            <textarea type="text" placeholder="enter things you want to donate" name="Goods"></textarea>
+            <label for="textarea" >Things You Want to Donate</label>
+            <textarea type="text" placeholder="..." name="Goods"></textarea>
             
             <button type="submit"   name="submitid">Donate</button>
-            <button type="submit"><a role="button"  href="donatedetails.php" style="font-size:20px;text-decoration:none">Other donars</a></button>
-            
-         
     
         </form>
     </div>

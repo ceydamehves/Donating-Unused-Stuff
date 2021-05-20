@@ -63,30 +63,30 @@ INSERT INTO `donar` (`Name`, `Phone`, `Email`, `Address`, `Goods`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ngologin`
+-- Table structure for table `sfdlogin`
 --
 
-CREATE TABLE `ngologin` (
+CREATE TABLE `sfdlogin` (
   `Name` text NOT NULL,
   `ReceiveGoods` text NOT NULL,
   `Password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ngologin`
+-- Dumping data for table `sfdlogin`
 --
 
-INSERT INTO `ngologin` (`Name`, `ReceiveGoods`, `Password`) VALUES
+INSERT INTO `sfdlogin` (`Name`, `ReceiveGoods`, `Password`) VALUES
 ('hasan', 'books', 'hasan123');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ngosignin`
+-- Table structure for table `sfdsignin`
 --
 
-CREATE TABLE `ngosignin` (
-  `NGOName` text NOT NULL,
+CREATE TABLE `sfdsignin` (
+  `sfdName` text NOT NULL,
   `Contact` int(10) NOT NULL,
   `Email` text NOT NULL,
   `Location` text NOT NULL,
@@ -95,10 +95,10 @@ CREATE TABLE `ngosignin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `ngosignin`
+-- Dumping data for table `sfdsignin`
 --
 
-INSERT INTO `ngosignin` (`NGOName`, `Contact`, `Email`, `Location`, `Password`, `ConfirmPassword`) VALUES
+INSERT INTO `sfdsignin` (`sfdName`, `Contact`, `Email`, `Location`, `Password`, `ConfirmPassword`) VALUES
 ('Hasan', 0123456789, 'hasan@gmail.com', 'Gaziantep', 'hasan123', 'hasan123');
 COMMIT;
 

@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Lobster+Two:ital@1&family=Parisienne&family=Suez+One&display=swap');
-/**font-family: 'Balthazar', serif;
-font-family: 'Lobster Two', cursive;
-font-family: 'Parisienne', cursive;
-font-family: 'Suez One', serif; **/
+
 body{
     background-color:#f0f6ff;
     font-family: 'Balthazar', serif;
 
 }
-
-
-
 .container{
     display: flex;
     flex-direction: row;

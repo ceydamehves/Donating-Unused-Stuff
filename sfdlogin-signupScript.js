@@ -2,33 +2,33 @@ const login=document.getElementById("login");
 const signup=document.getElementById('sign-up-data')
 
 
-function storeNgoLogin(e){
+function storesfdLogin(e){
   //  e.preventDefault();
-    const ngo_login={
+    const sfd_login={
         name:login.name.value,
         password:login.password.value
     }
-    console.log(ngo_login);
+    console.log(sfd_login);
 }
 
-login.addEventListener('submit',storeNgoLogin);
+login.addEventListener('submit',storesfdLogin);
 
 
-function storeNgoSignup(e){
+function storesfdSignup(e){
     //e.preventDefault();
-    const ngo_signup={
-        name:signup.ngoname.value,
-        phone:signup.ngophone.value,
-        email:signup.ngoemail.value,
+    const sfd_signup={
+        name:signup.sfdname.value,
+        phone:signup.sfdphone.value,
+        email:signup.sfdemail.value,
         location:signup.location.value,
         password1:signup.password1.value,
         password2:signup.password2.value
 
     }
-    console.log(ngo_signup);
+    console.log(sfd_signup);
 
 }
-signup.addEventListener('submit',storeNgoSignup);
+signup.addEventListener('submit',storesfdSignup);
 
 
 

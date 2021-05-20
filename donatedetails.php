@@ -55,41 +55,6 @@ function filterTable($query)
 </head>
 
   <body>
-    <h2>Have a look at other Donars!!!</h2>
-  <!--<table width="100%" border="2" class="table table-striped ">
-      <thead bgcolor="gray"  style="color:white; font-size: 20px; ">   
-          
-          <th>Name of Donar</th>
-            <th >Phone Number</th>
-            <th>Email Id</th>
-            <th>Address </th>
-            <th>Goods you want to donate</th>
-           
-      </thead>
-
-      <form method="POST" action="donatedetails.php">
-      <tbody>
-      <?php
-       // $conn=mysqli_connect("localhost","root","","donate_db") or die("connection not established");
-        
-      //  $query=mysqli_query($conn,"select * from donar");
-        //while($row=mysqli_fetch_array($query)){
-          ?>
-          <tr>
-              
-            <td><?php// echo $Name=$row['Name']; ?></td>
-                    <td><?php //echo $Phone=$row['Phone']; ?></td>
-                    <td><?php //echo $Email=$row['Email']; ?></td>
-                    <td><?php //echo $Address=$row['Address']; ?></td>
-                    <td><?php //echo $Goods=$row['Goods']; ?></td>
-            </tr>
-          <?php
-        
-      
-      ?>
-      </tbody>
-</table>
-!-->
         <form action="donatedetails.php" method="post">
     <center>
           <div class="no-print">
@@ -106,22 +71,17 @@ function filterTable($query)
                     <th>Phone</th>
                     <th>Email</th>
                     <th>Address</th>
-                    <th>Goods</th>
-            
-
-
-
-                             </thead>
+                    <th>Goods</th>    
+      </thead>
       <tbody>
-                          <?php while($row = mysqli_fetch_array($search_result)):?>
+                  <?php while($row = mysqli_fetch_array($search_result)):?>
                               
                    <tr>
                               <td height="28"><?php echo $Name=$row['Name']; ?></td>
                               <td><?php echo $Phone=$row['Phone']; ?></td>
                               <td><?php echo $Email=$row['Email']; ?></td>
                               <td><?php echo $Address=$row['Address']; ?></td>
-                              <td><?php echo $Goods=$row['Goods']; ?></td>
-                              
+                              <td><?php echo $Goods=$row['Goods']; ?></td>                              
                    </tr>
                  <?php endwhile;?>
            </tbody>

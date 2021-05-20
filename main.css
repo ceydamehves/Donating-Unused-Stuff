@@ -3,13 +3,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
+    justify-content: center;
 }
   
-/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -30,4 +30,12 @@ body{
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+}
+
+.about{
+    background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
 }

@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ngologin-signup.css">
+    <link rel="stylesheet" href="sfdlogin-signup.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
@@ -30,7 +30,7 @@ if(isset($_POST['submitid']))
         $ReceiveGoods=$_POST['ReceiveGoods'];
         $Password=$_POST['Password'];
         
-        $query1="INSERT INTO ngologin(Name,Password,ReceiveGoods) VALUES('$Name','$Password','$ReceiveGoods');";
+        $query1="INSERT INTO sfdlogin(Name,Password,ReceiveGoods) VALUES('$Name','$Password','$ReceiveGoods');";
         $res1=mysqli_query($conn,$query1);
         
       
@@ -42,12 +42,12 @@ if(isset($_POST['submitid']))
 
 
 if(count($_POST)>0) {
-	$result = mysqli_query($conn,"SELECT * FROM ngosignin WHERE Password = '". $_POST["Password"]."'and NGOName= '". $_POST["NGOName"]."'");
+	$result = mysqli_query($conn,"SELECT * FROM sfdsignin WHERE Password = '". $_POST["Password"]."'and sfdName= '". $_POST["sfdName"]."'");
 	$count  = mysqli_num_rows($result);
 	if($count==0) {
 		echo "<script>alert('Invalid RollNo or Password!!');</script>";
 		
-		echo "<script>window.location.href='./ngologin-signup.php';</script>";
+		echo "<script>window.location.href='./sfdlogin-signup.php';</script>";
 		exit();
 		//$message = "Invalid Username or Password!";
 	} else
@@ -64,21 +64,21 @@ if(count($_POST)>0) {
         <div class="login" data-aos="zoom-in-up" data-aos-duration="1000"
         data-aos-easing="ease-in-out">
             <h1>Login</h1>
-            <form  id="login" class="login-data" method="post" action="ngologin-signup.php">
-                <label for="text" >NGO Name</label>
-                <input type="text" id="ngo-name" placeholder="Full name" name="NGOName"
+            <form  id="login" class="login-data" method="post" action="sfdlogin-signup.php">
+                <label for="text" >Name</label>
+                <input type="text" id="sfd-name" placeholder="Name" name="sfdName"
                 required minlength="2" maxlength="100" />
                 
-                <label for="text" >What you need</label>
-                <input type="text" id="ngo-name" placeholder="what you what to receive" name="ReceiveGoods"
+                <label for="text" >What You Need ?</label>
+                <input type="text" id="sfd-name" placeholder="" name="ReceiveGoods"
                 required minlength="2" maxlength="100" />
               
                 <label for="text" >Password</label>
-                <input type="password" id="ngo-password" placeholder="Create Password (Min. 8 Characters)" name="Password"
+                <input type="password" id="sfd-password" placeholder="Create Password (Min. 8 Characters)" name="Password"
                 required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please include 1 uppercase Character,1 lowercase Character and 1 number. "
           />
-                <button type="submit" name="submitid">Login</button>
-                <a href="NGOsignup.php" style="text-decoration:none;color:white">Make new account!!</a>
+                <button type="submit" name="submitid">Login</button><br>
+                <a href="sfdsignup.php" style="text-decoration:none;color:white">Make new account!</a><br>
             
             </form>
         </div>
@@ -87,14 +87,14 @@ if(count($_POST)>0) {
     <script>
       AOS.init();
     </script>
-    <script src="ngologin-signupScript.js"></script>
+    <script src="sfdlogin-signupScript.js"></script>
     <?php
     if(isset($_POST['submitid']))
     {
-        $Name=$_POST['NGOName'];
+        $Name=$_POST['sfdName'];
        $ReceiveGoods=$_POST['ReceiveGoods'];
         $Password=$_POST['Password'];
-        $query2="INSERT INTO ngologin(Name,ReceiveGoods,Password) VALUES('$Name','$ReceiveGoods','$Password');";
+        $query2="INSERT INTO sfdlogin(Name,ReceiveGoods,Password) VALUES('$Name','$ReceiveGoods','$Password');";
         $res2=mysqli_query($conn,$query2);
         
       

@@ -61,10 +61,10 @@ $row=mysqli_num_rows($query);
     <div class="main-container">
         <div class="container"  data-aos="zoom-in-up" data-aos-duration="1000"
         data-aos-easing="ease-in-out">
-            <h1>Admin Login</h1>
+            <h1 style="color: #f2f2f2">Admin Login</h1>
             <form id="admin_form" action="admin.php" method="post">
                 <label for="name" >Name</label>
-                <input type="text" id="name" placeholder="Full name" name="Name"
+                <input type="text" id="name" placeholder="Name" name="Name"
                 required minlength="2" maxlength="100"/>
                 <label for="password" >Password</label>
                 <input type="password" id="password" placeholder="Enter Password" name="Password"
