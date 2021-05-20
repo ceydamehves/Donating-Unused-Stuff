@@ -39,7 +39,7 @@
       <form method="POST" action="donatedetails.php">
       <tbody>
       <?php
-        // $conn=mysqli_connect("localhost","root","","ipfinal") or die("connection not established");
+        // $conn=mysqli_connect("localhost","root","","donate_db") or die("connection not established");
         
       //  $query=mysqli_query($conn,"select * from ngologin");
         // $query1=mysqli_query($conn,"SELECT * FROM ngologin JOIN ngosignin ON ngologin.Name = ngosignin.NGOName");
@@ -120,7 +120,7 @@ else
 // function to connect and execute the query
 function filterTable($query)
 {
-    $connect =mysqli_connect("localhost", "root", "", "ipfinal");
+    $connect =mysqli_connect("localhost", "root", "", "donate_db");
     $filter_Result = mysqli_query($connect, $query);
     if (!$filter_Result) {
     printf("Error: %s\n", mysqli_error($connect));

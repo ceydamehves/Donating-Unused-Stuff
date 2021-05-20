@@ -37,8 +37,8 @@ a:hover
 <body>
 <div class="container"  data-aos="zoom-in" data-aos-duration="1000">
         <h1>Welcome back Admin!!!</h1>
-    <button type="submit"><a  href="donatedetails.php" style="text-decoration:none">Donors</a></button>
-    <button type="submit"><a  href="admindisplayNGO.php" style="text-decoration:none">NGOS</a></button>
+    <button type="submit"><a  href="donatedetails.php" style="text-decoration:none">Donators</a></button>
+    <button type="submit"><a  href="admindisplayNGO.php" style="text-decoration:none">Searching for Donates</a></button>
            
     
     </div>  

@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ipfinal`
+-- Database: `donate_db`
 --
 
 -- --------------------------------------------------------
@@ -37,7 +37,7 @@ CREATE TABLE `adminlogin` (
 --
 
 INSERT INTO `adminlogin` (`Name`, `Password`) VALUES
-('admin', 'admin2020');
+('admin', 'admin1234');
 
 -- --------------------------------------------------------
 
@@ -58,9 +58,7 @@ CREATE TABLE `donar` (
 --
 
 INSERT INTO `donar` (`Name`, `Phone`, `Email`, `Address`, `Goods`) VALUES
-('Wakde', 829159839, 'shivaniwakde1211@gmail.com', 'B-504,Chinmay Gaurang', 'medicines'),
-('Gauri Wakde', 829159839, 'shivaniwakde1211@gmail.com', 'Panvel', 'mobile'),
-('Shivani', 829159839, 'shivaniwakde1211@gmail.com', 'Panvel', 'Books');
+('Hasan', 5555555555, 'hasan@gmail.com', 'Gaziantep', 'medicines');
 
 -- --------------------------------------------------------
 
@@ -79,9 +77,7 @@ CREATE TABLE `ngologin` (
 --
 
 INSERT INTO `ngologin` (`Name`, `ReceiveGoods`, `Password`) VALUES
-('uday', 'books', 'Uday@1211'),
-('gauri', 'mobile', 'Gauri@1211'),
-('shivanii', 'Books', 'Shivani@1211');
+('hasan', 'books', 'hasan123');
 
 -- --------------------------------------------------------
 
@@ -103,9 +99,7 @@ CREATE TABLE `ngosignin` (
 --
 
 INSERT INTO `ngosignin` (`NGOName`, `Contact`, `Email`, `Location`, `Password`, `ConfirmPassword`) VALUES
-('uday', 1234567899, 'uday@gmail.com', 'london', 'Uday@1211', 'Uday@1211'),
-('gauri', 1234567899, 'gauri@gmail.com', 'panvel', 'Gauri@1211', 'Gauri@1211'),
-('shivanii', 1234567899, 'shivaniwakde1211@gmail.com', 'panvel', 'Shivani@1211', 'Shivani@1211');
+('Hasan', 0123456789, 'hasan@gmail.com', 'Gaziantep', 'hasan123', 'hasan123');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

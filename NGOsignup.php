@@ -2,7 +2,7 @@
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $db = "ipfinal";
+    $db = "donate_db";
     $conn = mysqli_connect($host, $user, $pass, $db) or die('Error Connecting');
     
 
